@@ -3,8 +3,8 @@
   background-color: #576f35;
 }
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .section-one-hero {
   display: flex;
@@ -52,19 +52,19 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .container {
-    /* чомусь не перевизначає padding */
-    padding: 0 16px;
+  .container.section-one-hero {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .section-one-hero {
-    min-width: 704px;
-    padding-top: 122px;
+    max-width: 704px;
     margin-bottom: 50px;
   }
 
   .section-one-title {
     font-size: 76px;
+    padding-top: 122px;
     margin-bottom: 25px;
   }
 
@@ -92,23 +92,19 @@
 @media only screen and (min-width: 1280px) {
   .section-one-flex {
     display: flex;
-    max-width: 1280px;
-    padding-left: 28px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 28px;
   }
-  .container {
-    /* чомусь не перевизначає padding */
-    padding: 0px;
-  }
+
   .section-one-hero {
-    width: 502px;
+    max-width: 502px;
     margin-top: 238px;
     margin-bottom: 0;
     padding-right: 20px;
   }
 
   .section-one-title {
+    padding-top: 0;
     margin-bottom: 128px;
   }
 
@@ -117,6 +113,8 @@
     margin-bottom: 50px;
   }
   .section-one-picture {
+    margin-left: 0;
+    margin-left: 0;
     min-width: 650px;
     min-height: 800px;
     background-image: url(/img/section-one-img/section-one-desktop@1x.jpg);
