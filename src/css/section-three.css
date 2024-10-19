@@ -3,30 +3,28 @@
   margin: 0 auto;
 }
 .section-container {
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .span-discount-text {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   font-weight: 600;
   font-size: 48px;
   line-height: 1.04;
   letter-spacing: -0.01em;
-  color: #fbfbfb;
-  background-color: #576f35;
-  border-radius: 12px;
-  padding: 3px 10px;
+  color: #141414;
   text-transform: uppercase;
 }
 .span-advertisement-text {
   display: block;
-  padding: 0px 10px;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.04;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: #141414;
-  padding: 0 10px;
+  background-color: #576f35;
+  color: #fbfbfb;
+  margin-left: -10px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  width: 105%;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -41,26 +39,20 @@
     line-height: 1.09;
     padding: 8px 16px;
   }
-  .span-advertisement-text {
-    font-size: 64px;
-    line-height: 1.09;
-    padding: 0 16px;
-  }
 }
-
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
   .section-container {
     padding: 0 100px;
   }
   .span-discount-text {
+    display: block;
+    max-width: 1054px;
     font-size: 76px;
     line-height: 1.05263;
     padding: 0 13px;
   }
   .span-advertisement-text {
-    font-size: 76px;
-    line-height: 1.05263;
-    padding: 0 13px;
+    display: inline;
   }
 }
