@@ -93,6 +93,11 @@
   .section-one-flex {
     display: flex;
     margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+  }
+  .container.section-one-hero {
+    margin-left: auto;
     margin-right: 28px;
   }
 
@@ -113,8 +118,7 @@
     margin-bottom: 50px;
   }
   .section-one-picture {
-    margin-left: 0;
-    margin-left: 0;
+    margin: 0;
     min-width: 650px;
     min-height: 800px;
     background-image: url(/img/section-one-img/section-one-desktop@1x.jpg);
