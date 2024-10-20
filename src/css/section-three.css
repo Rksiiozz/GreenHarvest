@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 .section-container {
-  padding: 0 20px;
+  padding: 0 10px;
 }
 .span-discount-text {
   display: flex;
@@ -16,6 +16,7 @@
   letter-spacing: -0.01em;
   color: #141414;
   text-transform: uppercase;
+  padding: 0 10px;
 }
 .span-advertisement-text {
   display: block;
@@ -24,7 +25,7 @@
   margin-left: -10px;
   padding: 3px 10px;
   border-radius: 12px;
-  width: 105%;
+  width: 108%;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -38,6 +39,9 @@
     font-size: 64px;
     line-height: 1.09;
     padding: 8px 16px;
+  }
+  .span-advertisement-text {
+    width: 103%;
   }
 }
 /* Styles for Desktop devices */
