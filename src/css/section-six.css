@@ -165,12 +165,16 @@
   .section-six {
     padding: 100px 0;
   }
+  .your-order-title-paragraf {
+    max-width: 640px;
+  }
   .your-order-title {
     margin-bottom: 25px;
     font-size: 64px;
   }
   .your-order-text {
     margin-bottom: 50px;
+    font-size: 16px;
   }
   .input-img-container {
     padding: 0 38px;
