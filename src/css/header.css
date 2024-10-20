@@ -1,6 +1,9 @@
-.header-container {
+.top-header {
   background-color: #576f35;
-
+  position: absolute;
+  top: 20px;
+}
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,8 +13,11 @@
   display: none;
 }
 .header-btn-menu {
+  width: 32px;
+  height: 32px;
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 @media screen and (min-width: 768px) {
   .header-logo-icon {
@@ -22,8 +28,15 @@
     width: 40px;
     height: 40px;
   }
+  .header-btn-menu {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media screen and (min-width: 1280px) {
+  .top-header {
+    padding: 4px 0;
+  }
   .header-btn-menu {
     display: none;
   }
@@ -35,6 +48,7 @@
   }
   .header-nav {
     display: flex;
+    margin-right: 20px;
   }
   .header-nav-list {
     display: flex;
@@ -58,5 +72,23 @@
     color: #fbfbfb;
 
     padding: 12px;
+  }
+  .header-btn-shop {
+    width: 157px;
+    height: 52px;
+    background-color: #7a3145;
+    border-radius: 30px;
+    border: none;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.11111;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #fbfbfb;
+  }
+  .header-btn-shop:hover,
+  .header-btn-shop:focus {
+    background-color: #622133;
   }
 }
