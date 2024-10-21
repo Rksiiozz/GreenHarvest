@@ -24,7 +24,7 @@
   height: 100%;
   padding: 240px 0;
   padding-bottom: 40px;
-  background-color: #7A3145;
+  background-color: #7a3145;
 }
 
 .mobile-menu-close-btn {
@@ -35,7 +35,7 @@
   height: 32px;
   background-color: transparent;
   border: none;
-  fill: #FBFBFB;
+  fill: #fbfbfb;
 }
 
 .mobile-menu-list {
@@ -57,14 +57,14 @@
   letter-spacing: -0.02em;
   text-align: center;
   padding: 12px 0;
-  color: #FBFBFB;
+  color: #fbfbfb;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-list-link.active {
-  color: #7A3145;
-  background-color: #FBFBFB;
+  color: #7a3145;
+  background-color: #fbfbfb;
 }
 
 .mobile-menu-shop-now-btn {
@@ -73,8 +73,8 @@
   height: 50px;
   margin: 0 auto;
   border-radius: 30px;
-  background-color: #FBFBFB;
-  color: #7A3145;
+  background-color: #fbfbfb;
+  color: #7a3145;
   border: none;
   margin-top: auto;
   font-size: 14px;
