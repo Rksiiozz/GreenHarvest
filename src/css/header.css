@@ -47,36 +47,42 @@
   .header-btn-menu {
     display: none;
   }
-  .header-logo-link {
-    margin-right: 397px;
-  }
   .header-btn-shop {
     display: block;
   }
   .header-nav {
     display: flex;
     margin-right: 20px;
+    gap: 397px;
   }
   .header-nav-list {
     display: flex;
     gap: 8px;
   }
-
   .header-nav-list-item-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 114px;
-    height: 44px;
-    border: 1px solid rgba(251, 251, 251, 0.4);
-    border-radius: 12px;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
+    border: 1px solid rgba(251, 251, 251, 0.4);
+    border-radius: 12px;
+  }
+  .header-nav-list-item-link.link-order-steps {
+    width: 114px;
+    height: 44px;
+  }
+  .header-nav-list-item-link.link-vegetables {
+    width: 101px;
+    height: 44px;
+  }
+  .header-nav-list-item-link.link-revies {
+    width: 81px;
+    height: 44px;
   }
   .header-btn-shop {
     width: 157px;
