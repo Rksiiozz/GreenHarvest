@@ -13,20 +13,13 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 80px;
-    /* Зменшено відступи між блоками */
-    padding: 20px;
-    /* Зменшено відступи футера */
-    width: 100%;
+    padding: 40px 20px;
 }
 
 .footer-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 40px;
-    /* Зменшено відстань між елементами */
-    width: 100%;
 }
 
 .footer-logo-text {
@@ -35,170 +28,198 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 14px;
-    /* Менший відступ між елементами */
-    width: 100%;
-}
-
-.footer-menu {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-menu-li {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: #fbfbfb;
-    white-space: nowrap;
-    /* Щоб текст не переносився на новий рядок */
-}
-
-.footer-ul-contacts {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer-privacy-policy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 49px;
-    width: 100%;
-    color: rgba(251, 251, 251, 0.5);
-    white-space: nowrap;
-}
-
-.footer-policy-a {
-    font-weight: 500;
-    font-size: 12px;
-    color: rgba(251, 251, 251, 0.5);
-    width: 171px;
-    height: 16px;
-}
-
-.footer-policy-a-green {
-    font-weight: 500;
-    font-size: 12px;
-    color: rgba(251, 251, 251, 0.5);
-    width: 115px;
-    height: 14px;
 }
 
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 4px;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.footer-p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #fbfbfb;
+}
+
+.footer-menu,
+.footer-ul-contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-menu-li {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+}
+
+.footer-privacy-policy {
+    display: flex;
+    justify-content: space-between;
+    /* Вирівнювання блоків */
+    width: 100%;
+    /* Займає всю ширину */
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-policy-a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-policy-a-green {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.menu-plus-adress {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-a-tel,
+.footer-p-address {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+    font-style: normal;
+}
+
+.svg-text {
+    width: 148px;
+    height: 12px;
 }
 
 .svg-logo {
-    margin-right: 10px;
     width: 16px;
     height: 16px;
 }
 
-.svg-text {
-    height: 12px;
-    width: 148px;
+.menu-plus-contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.footer-p {
-    font-size: 14px;
-    color: #fbfbfb;
-    margin: 0;
-    /* Видалення зайвих відступів */
-}
-
-.footer-a-tel,
-.footer-p-adress {
-    font-size: 14px;
-    color: #fbfbfb;
-    margin: 0;
-    font-style: normal;
+.footer-contacts-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 49px;
 }
 
 /* Для планшетів (768px - 1023px) */
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-
+    
     .footer-class {
         padding: 32px;
-        /* Зменшені відступи */
         gap: 100px;
-        /* Трохи більші відступи між блоками */
     }
 
-    .footer-container {
+    .menu-plus-contact {
         flex-direction: row;
-        justify-content: space-between;
         gap: 224px;
     }
 
     .footer-logo-text {
-        width: 265px;
         gap: 25px;
     }
 
-    .footer-menu,
     .footer-ul-contacts {
         width: 177px;
         gap: 25px;
     }
 
-    .footer-p {
-        font-size: 16px;
+    .footer-menu-li {
+        font-size: 32px;
+        white-space: nowrap;
+    }
+
+    .footer-contacts-wrapper {
+        align-items: flex-start;
+        gap: 284px;
+    }
+
+    .menu-plus-adress {
+        gap: 64px;
+    }
+
+    .footer-menu,
+    .footer-ul-contacts {
+        gap: 25px;
     }
 
     .footer-a-tel,
-    .footer-p-adress {
+    .footer-p-address {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.11111;
         letter-spacing: -0.01em;
         color: #fbfbfb;
+        font-style: normal;
         white-space: nowrap;
-    }
-
-    .footer-menu-li {
-        font-size: 32px;
-    }
-
-    .menu-plus-adress {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 64px;
-        width: 215px;
-        height: 295px;
     }
 
     .footer-policy-a,
     .footer-policy-a-green {
-        font-weight: 400;
         font-size: 18px;
         line-height: 1.11111;
-        letter-spacing: -0.01em;
-        color: rgba(251, 251, 251, 0.5);
     }
 
-    .footer-policy-a {
-        gap: 8px;
-        height: 20px;
-        display: flex;
-        align-items: left;
+    .footer-p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+/* Для великих екранів (від 1280px) */
+@media only screen and (min-width: 1280px) {
+    
+    .footer-class {
+        gap: 125px;
+        padding: 50px 100px;
+        max-width: 1280px;
+        margin: 0 auto;
     }
 
-    .footer-policy-a-green {
+    .menu-plus-contact {
         display: flex;
-        align-items: right;
-        gap: 8px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 302px;
+    }
+
+    .menu-plus-adress {
+        flex-direction: row;
+        gap: 121px;
+    }
+
+    .footer-contacts-wrapper {
+        gap: 25px;
     }
 
     .svg-text {
@@ -206,79 +227,12 @@
         height: 15px;
     }
 
-    .footer-privacy-policy {
-        gap: 284px;
-        width: 704px;
-        height: 20px;
-    }
-}
-
-/* Для великих екранів (від 1280px) */
-@media only screen and (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
-    }
-
-    .footer-class {
-        padding: 50px 100px;
-        /* Зменшено відступи */
-        justify-content: space-between;
-        gap: 125px;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        gap: 30px;
-    }
-
-    .footer-logo-text {
-        max-width: 300px;
+    .svg-logo {
+        width: 18px;
+        height: 18px;
     }
 
     .footer-logo {
-        display: flex;
-        align-items: center;
-    }
-
-    .svg-logo {
-        margin-right: 10px;
-    }
-
-    .footer-p {
-        font-size: 16px;
-    }
-
-    .footer-menu-li {
-        font-size: 28px;
-        margin-bottom: 10px;
-    }
-
-    .footer-a-tel,
-    .footer-p-adress {
-        font-size: 18px;
-    }
-
-    .footer-privacy-policy {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 660px;
-        width: 1080px;
-        height: 20px;
-    }
-
-    .footer-policy-a {
-        font-size: 14px;
-    }
-
-    .footer-menu {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        gap: 25px;
-        width: 177px;
-        height: 146px;
+        gap: 8px;
     }
 }
