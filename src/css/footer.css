@@ -1,0 +1,233 @@
+.footer-class {
+    background-color: #7A3145;
+}
+
+.footer-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 80px;
+    padding: 40px 20px;
+}
+
+.footer-logo-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.footer-p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    color: #fbfbfb;
+}
+
+.footer-menu,
+.footer-ul-contacts {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-menu-li {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+}
+
+.footer-privacy-policy {
+    display: flex;
+    justify-content: space-between;
+    /* Вирівнювання блоків */
+    width: 100%;
+    /* Займає всю ширину */
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-policy-a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33333;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.footer-policy-a-green {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: -0.01em;
+    color: rgba(251, 251, 251, 0.5);
+}
+
+.menu-plus-adress {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-a-tel,
+.footer-p-address {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.01em;
+    color: #fbfbfb;
+    font-style: normal;
+}
+
+.svg-text {
+    width: 148px;
+    height: 12px;
+}
+
+.svg-logo {
+    width: 16px;
+    height: 16px;
+}
+
+.menu-plus-contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-contacts-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 49px;
+}
+
+/* Для планшетів (768px - 1023px) */
+@media only screen and (min-width: 768px) {
+
+    .footer-container {
+        gap: 100px;
+        padding: 32px;
+    }
+
+    .menu-plus-contact {
+        flex-direction: row;
+        gap: 224px;
+    }
+
+    .footer-logo-text {
+        gap: 25px;
+    }
+
+    .footer-ul-contacts {
+        width: 177px;
+        gap: 25px;
+    }
+
+    .footer-menu-li {
+        font-size: 32px;
+        white-space: nowrap;
+    }
+
+    .footer-contacts-wrapper {
+        align-items: flex-start;
+        gap: 284px;
+    }
+
+    .menu-plus-adress {
+        gap: 64px;
+    }
+
+    .footer-menu,
+    .footer-ul-contacts {
+        gap: 25px;
+    }
+
+    .footer-a-tel,
+    .footer-p-address {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.11111;
+        letter-spacing: -0.01em;
+        color: #fbfbfb;
+        font-style: normal;
+        white-space: nowrap;
+    }
+
+    .footer-policy-a,
+    .footer-policy-a-green {
+        font-size: 18px;
+        line-height: 1.11111;
+    }
+
+    .footer-p {
+        font-weight: 500;
+        width: 265px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+/* Для великих екранів (від 1280px) */
+@media only screen and (min-width: 1280px) {
+    
+    .footer-container {
+        gap: 125px;
+        padding: 50px 100px;
+    }
+
+    .menu-plus-contact {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 302px;
+    }
+
+    .menu-plus-adress {
+        flex-direction: row;
+        gap: 121px;
+    }
+
+    .footer-contacts-wrapper {
+        gap: 25px;
+    }
+
+    .svg-text {
+        width: 168px;
+        height: 15px;
+    }
+
+    .svg-logo {
+        width: 18px;
+        height: 18px;
+    }
+
+    .footer-logo {
+        gap: 8px;
+    }
+
+    .footer-p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #fbfbfb;
+    }
+}
