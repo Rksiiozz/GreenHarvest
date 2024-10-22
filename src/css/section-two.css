@@ -183,7 +183,6 @@
     padding: 100px;
     align-items: flex-end;
     flex-basis: calc(50% - 10px);
-    min-width: 630px;
   }
 
   .section-two-image {
