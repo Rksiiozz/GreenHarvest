@@ -24,3 +24,7 @@ body {
   visibility: visible;
   pointer-events: auto;
 }
+
+html {
+  scroll-behavior: smooth;
+}
